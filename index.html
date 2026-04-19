@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body data-theme="1">
+    <div class="calculator">
+      <header>
+        <h2>calc</h2>
+        <div class="theme-switcher">
+          <span>THEME</span>
+          <div class="theme-selector">
+            <div class="theme-numbers">
+              <span data-theme="1">1</span>
+              <span data-theme="2">2</span>
+              <span data-theme="3">3</span>
+            </div>
+            <button class="theme-toggle" aria-label="switch theme">
+              <div class="toggle-indicator"></div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="display">0</section>
+        <section class="keypad">
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-action="delete" class="btn-delete btn-navy">DEL</button>
+
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="+">+</button>
+
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="-">-</button>
+
+          <button data-value=".">.</button>
+          <button data-value="0">0</button>
+          <button data-value="/">/</button>
+          <button data-value="*">x</button>
+
+          <button data-action="reset" class="btn-reset btn-navy">RESET</button>
+          <button data-action="equals" class="btn-equals">=</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
