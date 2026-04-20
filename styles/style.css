@@ -98,7 +98,7 @@ body {
 }
 
 .calculator {
-  width: min(480px, 100% - 2rem);
+  width: min(30rem, 100% - 2rem);
   overflow: hidden;
 }
 
@@ -106,7 +106,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.125rem;
 }
 
 header {
@@ -116,41 +116,45 @@ header {
   color: var(--text-color);
 
   h2 {
-    font-size: 25px;
+    font-size: 1.563rem;
   }
 
   .theme-switcher {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
-    font-size: 10px;
+    gap: 1.25rem;
+    font-size: 0.625rem;
     font-weight: 400;
 
     > span {
-      margin-bottom: 4.5px;
+      margin-bottom: 0.28125rem;
     }
 
     .theme-numbers {
       display: flex;
       justify-content: space-around;
-      margin-bottom: 3px;
+      margin-bottom: 0.188rem;
     }
 
     .theme-toggle {
       background-color: var(--bg-secondary-color);
-      width: 48px;
-      height: 17px;
-      border-radius: 13px;
+      width: 3rem;
+      height: 1.063rem;
+      border-radius: 0.813rem;
       position: relative;
       cursor: pointer;
 
+      &&:focus-visible {
+        outline: 2px solid var(--key-bg-color-toggle);
+      }
+
       .toggle-indicator {
         background-color: var(--key-bg-color-toggle);
-        width: 11px;
-        height: 11px;
+        width: 0.688rem;
+        height: 0.688rem;
         border-radius: 50%;
         position: absolute;
-        top: calc(50% - 5.75px);
+        top: calc(50% - 0.344rem);
         left: var(--toggle-left-position);
         transition: left 0.3s ease;
       }
@@ -160,11 +164,11 @@ header {
 
 main {
   .display {
-    font-size: 35px;
+    font-size: 2.188rem;
     background-color: var(--screen-bg-color);
     color: var(--text-color);
-    padding: 28px;
-    border-radius: 7px;
+    padding: 1.75rem;
+    border-radius: 0.438rem;
     text-align: right;
     overflow: hidden;
     white-space: nowrap;
@@ -173,43 +177,47 @@ main {
   .keypad {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: clamp(15px, 2.5vw, 22px);
-    padding: 23px;
-    border-radius: 7px;
+    gap: clamp(0.938rem, 2.5vw, 1.375rem);
+    padding: 1.438rem;
+    border-radius: 0.438rem;
     background-color: var(--bg-secondary-color);
 
     button {
       background-color: var(--key-light-bg-color);
-      box-shadow: 0px 4px 0px var(--key-light-shadow-color);
+      box-shadow: 0px 0.25rem 0px var(--key-light-shadow-color);
       color: var(--text-secondary-color);
-      font-size: clamp(17px, 6vw, 35px);
-      padding-right: clamp(0px, 2px, 20px);
-      padding-top: clamp(14px, 1vw, 8px);
-      padding-bottom: clamp(7px, 0.5vw, 3px);
+      font-size: clamp(1.063rem, 6vw, 2.188rem);
+      padding-right: clamp(0px, 0.125rem, 1.25rem);
+      padding-top: clamp(0.875rem, 1vw, 0.5rem);
+      padding-bottom: clamp(0.438rem, 0.5vw, 0.188rem);
       cursor: pointer;
+
+      &&:focus-visible {
+        outline: 2px solid var(--key-bg-color-toggle);
+      }
     }
 
     .btn-navy {
       background-color: var(--key-dark-bg-color);
-      box-shadow: 0px 4px 0px var(--key-dark-shadow-color);
+      box-shadow: 0px 0.25rem 0px var(--key-dark-shadow-color);
       color: var(--text-white-color);
     }
 
     .btn-delete,
     .btn-equals,
     .btn-reset {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     .btn-reset,
     .btn-equals {
       grid-column: span 2;
-      padding: 12px;
+      padding: 0.75rem;
     }
 
     .btn-equals {
       background-color: var(--key-bg-color-toggle);
-      box-shadow: 0px 4px 0px var(--key-shadow-color-toggle);
+      box-shadow: 0px 0.25rem 0px var(--key-shadow-color-toggle);
       color: var(--text-equal-color);
     }
   }

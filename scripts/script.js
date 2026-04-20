@@ -64,8 +64,9 @@ const formatResult = (result) => {
   const formattedResult =
     result % 1 === 0
       ? result.toString()
-      : Number.parseFloat(result.toFixed(2)).toString();
-  if (formattedResult.length >= 10) {
+      : Number.parseFloat(result.toFixed(10)).toString();
+
+  if (Math.abs(result) >= 1000000000) {
     return Number.parseFloat(formattedResult).toExponential(3).toString();
   }
   return formattedResult;
@@ -124,7 +125,7 @@ const getFontSize = (length, width) => {
   if (width <= 450) {
     return length > 16 ? "17px" : "25px";
   } else {
-    return length > 18 ? "30px" : "35px";
+    return length > 18 ? "30px" : "";
   }
 };
 const updateScreen = () => {
