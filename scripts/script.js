@@ -1,6 +1,5 @@
 const keybad = document.querySelector(".keypad");
 const screen = document.querySelector(".display");
-const button = document.querySelectorAll(".keypad button");
 
 let firstValue = "";
 let secondValue = "";
@@ -80,7 +79,7 @@ const handleReset = () => {
   screen.textContent = "0";
 };
 
-const calculate = (num1, num2, operator) => {
+const calculate = (num1, num2, op) => {
   const operations = {
     "+": (a, b) => a + b,
     "-": (a, b) => a - b,
@@ -88,7 +87,7 @@ const calculate = (num1, num2, operator) => {
     "/": (a, b) => (b === 0 ? "Error" : a / b),
   };
 
-  const operation = operations[operator];
+  const operation = operations[op];
   return operation ? operation(num1, num2) : "Error";
 };
 

@@ -26,7 +26,7 @@
   <body data-theme="1">
     <div class="calculator">
       <header>
-        <h2>calc</h2>
+        <h1>calc</h1>
         <div class="theme-switcher">
           <span>THEME</span>
           <div class="theme-selector">
@@ -35,8 +35,8 @@
               <span data-theme="2">2</span>
               <span data-theme="3">3</span>
             </div>
-            <button class="theme-toggle" aria-label="switch theme">
-              <div class="toggle-indicator"></div>
+            <button type="button" class="theme-toggle" aria-label="switch theme">
+              <span class="toggle-indicator"></span>
             </button>
           </div>
         </div>
@@ -44,28 +44,28 @@
       <main>
         <section class="display">0</section>
         <section class="keypad">
-          <button data-value="7">7</button>
-          <button data-value="8">8</button>
-          <button data-value="9">9</button>
-          <button data-action="delete" class="btn-delete btn-navy">DEL</button>
+          <button type="button" data-value="7">7</button>
+          <button type="button" data-value="8">8</button>
+          <button type="button" data-value="9">9</button>
+          <button type="button" data-action="delete" class="btn-delete btn-navy">DEL</button>
 
-          <button data-value="4">4</button>
-          <button data-value="5">5</button>
-          <button data-value="6">6</button>
-          <button data-value="+">+</button>
+          <button type="button" data-value="4">4</button>
+          <button type="button" data-value="5">5</button>
+          <button type="button" data-value="6">6</button>
+          <button type="button" data-value="+">+</button>
 
-          <button data-value="1">1</button>
-          <button data-value="2">2</button>
-          <button data-value="3">3</button>
-          <button data-value="-">-</button>
+          <button type="button" data-value="1">1</button>
+          <button type="button" data-value="2">2</button>
+          <button type="button" data-value="3">3</button>
+          <button type="button" data-value="-">-</button>
 
-          <button data-value=".">.</button>
-          <button data-value="0">0</button>
-          <button data-value="/">/</button>
-          <button data-value="*">x</button>
+          <button type="button" data-value=".">.</button>
+          <button type="button" data-value="0">0</button>
+          <button type="button" data-value="/">/</button>
+          <button type="button" data-value="*">x</button>
 
-          <button data-action="reset" class="btn-reset btn-navy">RESET</button>
-          <button data-action="equals" class="btn-equals">=</button>
+          <button type="button" data-action="reset" class="btn-reset btn-navy">RESET</button>
+          <button type="button" data-action="equals" class="btn-equals">=</button>
         </section>
       </main>
     </div>
