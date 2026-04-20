@@ -39,6 +39,8 @@ Users should be able to:
 
 ![Theme 3](./screenshots/theme3.png)
 
+## My process
+
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-s7i-wcOC7I]
