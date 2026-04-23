@@ -47,6 +47,10 @@ const handleSecondValue = (value) => {
 };
 
 const handleOperator = (value) => {
+  if (firstValue && operator && secondValue) {
+    handleEquals(true);
+  }
+
   if (!firstValue && value === "-") {
     firstValue = "-";
     updateScreen();
@@ -91,7 +95,7 @@ const calculate = (num1, num2, op) => {
   return operation ? operation(num1, num2) : "Error";
 };
 
-const handleEquals = () => {
+const handleEquals = (fromOperator = false) => {
   let result = null;
   if (!firstValue || !operator || !secondValue) return;
 
@@ -103,7 +107,7 @@ const handleEquals = () => {
   if (result === "Error") {
     errorHandler("Error");
   } else {
-    isResult = true;
+    if (!fromOperator) isResult = true;
     const formattedResult = formatResult(result);
     screen.textContent = formattedResult.replaceAll(".", ",");
     firstValue = formattedResult;
