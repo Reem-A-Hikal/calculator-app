@@ -39,10 +39,12 @@ Users should be able to:
 
 ![Theme 3](./screenshots/theme3.png)
 
+## My process
+
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/calculator-app-s7i-wcOC7I)
-- Live Site URL: [](https://reem-a-hikal.github.io/calculator-app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-s7i-wcOC7I]
+- Live Site URL: [https://reem-a-hikal.github.io/calculator-app/]
 
 ### Built with
 
